@@ -1,0 +1,24 @@
+<%- include('../layout', { title, active, body: `
+<section>
+  <h1>Contact Us</h1>
+  ${sent === true ? `<div class="alert success">Your message has been sent successfully. We'll get back to you soon.</div>` : ''}
+  ${error ? `<div class="alert error">${error}</div>` : ''}
+
+  <form method="POST" action="/contact" class="contact-form">
+    <label>Name
+      <input name="name" required />
+    </label>
+    <label>Email
+      <input type="email" name="email" required />
+    </label>
+    <label>Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+
+  <p class="muted" style="margin-top:12px;">
+    Or email us directly: <a href="mailto:faseelah.team2025@gmail.com">faseelah.team2025@gmail.com</a>
+  </p>
+</section>
+` }) %>

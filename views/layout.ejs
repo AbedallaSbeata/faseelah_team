@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body class="site">
+    <header>
+      <%- include('partials/navbar', { active }) %>
+    </header>
+
+    <main class="container">
+      <%- body %>
+    </main>
+
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
+  </body>
+</html>
