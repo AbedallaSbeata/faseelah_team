@@ -17,11 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Team data (EN)
 const teamMembers = [
-  { name: 'Zaher Yaqub', role: 'Founder', bio: 'Founder of Faseelah Team.', avatar: '/img/photo.jpg' },
-  { name: 'Banan Hamdan', role: 'UX/UI Designer', bio: 'Designs friendly and clean user experiences.', avatar: '/img/photo.jpg' },
-  { name: 'Abedalla Sbeata', role: 'Backend Developer', bio: 'Builds reliable and secure backend services.', avatar: '/img/photo.jpg' },
-  { name: 'Logain Hamdan', role: 'Flutter Developer', bio: 'Creates smooth cross-platform mobile apps.', avatar: '/img/photo.jpg' },
-  { name: 'Hala Farahat', role: 'Tester', bio: 'Ensures quality through thorough testing.', avatar: '/img/photo.jpg' },
+  { name: 'Zaher Yaqub', role: 'Founder', bio: 'Founder of Faseelah Team.'},
+  { name: 'Abedalla Sbeata', role: 'Backend Developer', bio: 'Builds reliable and secure backend services.'},
+  { name: 'Hala Farahat', role: 'Tester', bio: 'Ensures quality through thorough testing.'},
+  { name: 'Logain Hamdan', role: 'Flutter Developer', bio: 'Creates smooth cross-platform mobile apps.'},
+  { name: 'Banan Hamdan', role: 'UX/UI Designer', bio: 'Designs friendly and clean user experiences.'},
 ];
 
 // Mail transporter (Gmail SMTP via App Password)
