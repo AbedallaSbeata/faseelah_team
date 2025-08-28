@@ -1,19 +1,15 @@
-/* =========================
-   Faseelah Site - styles.css
-   ========================= */
 
-/* Theme variables */
 :root {
-  --bg: #0f172a;     /* slate-900 */
-  --card: #111827;   /* gray-900 */
-  --text: #e5e7eb;   /* gray-200 */
-  --muted: #94a3b8;  /* slate-400 */
-  --brand: #22d3ee;  /* cyan-400 */
-  --brand-2: #60a5fa;/* blue-400 */
-  --accent: #34d399; /* emerald-400 */
+  --bg: #0f172a;     
+  --card: #111827;   
+  --text: #e5e7eb;   
+  --muted: #94a3b8;  
+  --brand: #22d3ee;  
+  --brand-2: #60a5fa;
+  --accent: #34d399; 
 }
 
-/* Base */
+
 * { box-sizing: border-box; }
 
 body.site {
@@ -29,9 +25,7 @@ body.site {
 
 .container { max-width: 1000px; padding: 24px; margin: 0 auto; }
 
-/* =================
-   Navbar
-   ================= */
+
 .nav {
   display: flex; justify-content: space-between; align-items: center;
   padding: 14px 24px;
@@ -52,9 +46,7 @@ body.site {
 }
 .nav a.active, .nav a:hover { background: rgba(34,211,238,0.15); }
 
-/* ==============
-   Hero
-   ============== */
+
 .hero { text-align: center; padding: 60px 0 30px; }
 .hero h1 { font-size: 36px; margin: 0 0 10px; }
 .hero p { color: var(--muted); margin: 0 0 16px; }
@@ -66,9 +58,7 @@ body.site {
 }
 .btn:hover { transform: translateY(-2px); filter: brightness(1.03); }
 
-/* ==============
-   Feature Cards
-   ============== */
+
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -85,23 +75,18 @@ body.site {
 }
 .card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.3); }
 
-/* ===========================
-   Our Team (no images)
-   =========================== */
 
-/* يحافظ على تمركز الصف الأخير (مثلاً عند 5 كروت) */
 .team-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;  /* يوسّط آخر صف */
+  justify-content: center;  
   align-items: stretch;
 }
 
-/* كروت أكبر + حركة أنعم + خلفية متدرجة خفيفة */
 .member {
-  flex: 1 1 280px;         /* حد أدنى لعرض الكارت */
-  max-width: 360px;        /* منع التمدد الزائد */
+  flex: 1 1 280px;         
+  max-width: 360px;        
   background:
     radial-gradient(120% 120% at 0% 0%, rgba(34,211,238,0.06), transparent 50%),
     radial-gradient(120% 120% at 100% 0%, rgba(96,165,250,0.05), transparent 50%),
@@ -119,26 +104,22 @@ body.site {
   animation: cardEnter 420ms ease both;
 }
 
-/* دخول لطيف */
 @keyframes cardEnter {
   from { opacity: 0; transform: translateY(16px) scale(0.98); }
   to   { opacity: 1; transform: translateY(6px) scale(0.995); }
 }
 
-/* Hover: يطلع شوي ويكبر + لمعة خفيفة */
 .member:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(34,211,238,0.18);
   border-color: rgba(34,211,238,0.28);
 }
 
-/* تركيز عبر الكيبورد (accessibility) */
 .member:focus-within {
   outline: 2px solid rgba(34,211,238,0.55);
   outline-offset: 3px;
 }
 
-/* رأس الكارت: الاسم + شارة الدور */
 .member-header {
   display: flex;
   align-items: baseline;
@@ -153,9 +134,9 @@ body.site {
   font-weight: 800;
   letter-spacing: 0.2px;
   color: var(--text);
-  white-space: nowrap;       /* يمنع النزول لسطر جديد */
+  white-space: nowrap;       
   overflow: hidden;
-  text-overflow: ellipsis;   /* يعمل ... إذا الاسم أطول من عرض الكرت */
+  text-overflow: ellipsis;   
 }
 
 
@@ -180,9 +161,6 @@ body.site {
   font-size: 15px;
 }
 
-/* ===========================
-   Contact
-   =========================== */
 .contact-form {
   display: grid;
   gap: 10px;
@@ -198,7 +176,6 @@ input, textarea {
   outline: none;
 }
 
-/* رسائل النجاح/الخطأ */
 .alert.success {
   background: rgba(52,211,153,0.15);
   border: 1px solid rgba(52,211,153,0.5);
@@ -216,7 +193,6 @@ input, textarea {
   margin-bottom: 12px;
 }
 
-/* تلوين الروابط (بما فيها إيميل Contact) */
 .contact-form a,
 p a,
 a.email-link {
@@ -231,12 +207,8 @@ a.email-link:hover {
   text-decoration: underline;
 }
 
-/* نصوص خافتة */
 .muted { color: var(--muted); }
 
-/* ===========================
-   Footer
-   =========================== */
 footer .footer {
   text-align: center;
   padding: 24px;
@@ -245,9 +217,6 @@ footer .footer {
   margin-top: 40px;
 }
 
-/* ===========================
-   Small screens
-   =========================== */
 @media (max-width: 480px) {
   .member { flex: 1 1 100%; max-width: 100%; }
   .member-name { font-size: 18px; }
