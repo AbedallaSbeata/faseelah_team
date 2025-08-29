@@ -17,7 +17,8 @@ const teamMembers = [
   { name: 'Zaher Yaqub', role: 'Founder', bio: 'Founder of Faseelah Team.'},
   { name: 'Abedalla Sbeata', role: 'Backend Developer', bio: 'Builds reliable and secure backend services.'},
   { name: 'Hala Farahat', role: 'Tester', bio: 'Ensures quality through thorough testing.'},
-  { name: 'Logain Hamdan', role: 'Flutter Developer', bio: 'Creates smooth cross-platform mobile apps.'},
+  // { name: 'Logain Hamdan', role: 'Flutter Developer', bio: 'Creates smooth cross-platform mobile apps.'},
+  { name: 'Asmaa Ayyad', role: 'Flutter Developer', bio: 'Creates smooth cross-platform mobile apps.'},
   { name: 'Banan Hamdan', role: 'UX/UI Designer', bio: 'Designs friendly and clean user experiences.'},
   
 ];
